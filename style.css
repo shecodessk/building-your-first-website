@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Source+Code+Pro:wght@200&display=swap');
+
+html{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
+header{
+
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px
+}
+.logo{
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 1.8em;
+}
+.nav--ul{
+  list-style-type: none;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 100;
+  font-family: 'Source Code Pro', monospace;
+
+}
+.icon{
+  width: 1rem
+}
