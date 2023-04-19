@@ -9,13 +9,19 @@
   </head>
   <body>
     <header>
-      <div class="logo">Galinha</div>
+      <div class="logo">
+        <a class="logo--link" href="http://127.0.0.1:5500/index.html"
+          >Galinha</a
+        >
+      </div>
       <nav>
         <ul class="nav--ul">
-          <li>Our Story</li>
-          <li>Menu</li>
-          <li>Photos</li>
-          <li>Make a Reservation</li>
+          <li><a class="nav--link" href="#story">Our Story</a></li>
+          <li><a class="nav--link" href="#menu">Our Menu</a></li>
+          <li><a class="nav--link" href="#photos">Photos</a></li>
+          <li>
+            <a class="nav--link" href="#order">Make An Order</a>
+          </li>
           <li>
             <a href="www.facebook.com"
               ><img class="icon" src="images/fb-icon.svg" alt="facebook icon"
@@ -32,6 +38,63 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <div class="main--container">
+        <ul class="main--ul">
+          <li class="main--li">
+            <a class="main--link" href="#story">Our Story</a>
+          </li>
+          <li><a class="main--link" href="#menu"> Our Menu</a></li>
+          <li><a class="main--link" href="#photos">Photos</a></li>
+          <li>
+            <a class="main--link" href="#order">Make An Order</a>
+          </li>
+        </ul>
+      </div>
+      >
+    </main>
+    <section id="story">
+      <p>
+        We are proud to offer<strong>
+          pastured-raise, free-range, organic-feed, no GMOs</strong
+        >
+        eggs
+        <span class="story--underline--text"
+          >directly from your local farmer</span
+        >.
+      </p>
+    </section>
+    <section class="photos--main--section">
+      <div id="photos">
+        <img class="photos--img" src="images/rooster.jpg" />
+        <img class="photos--img" src="images/quail-eggs.jpg" />
+        <img class="photos--img" src="images/farming.jpg" />
+      </div>
+    </section>
+    <section id="order">
+      <form>
+        <fieldset class="inner--form">
+          <legend>Have Questions?</legend>
+          <div>
+            <label for="Full Name">Name: </label>
+            <input class="input" type="text" id="name" name="name" />
+          </div>
+
+          <div>
+            <label for="email">Email: </label>
+            <input class="input" type="email" id="email" name="email_address" />
+          </div>
+          <div>
+            <label for="mesagge">Message: </label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+          <div>
+            <input type="checkbox" id="terms" name="terms" />
+            <label for="terms">Agree to our Terms & Conditions</label>
+          </div>
+          <div><button type="submit">Send</button></div>
+        </fieldset>
+      </form>
+    </section>
   </body>
 </html>
